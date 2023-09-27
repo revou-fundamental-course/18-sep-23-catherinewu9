@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Grocery</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
     
     <header class="navigation">
         <div class="page-title">E-Grocery</div>
         <div class="nav">
-            <a href="/" class="nav-item">Home</a>
-            <a href="/" class="nav-item">Our Package</a>
+            <a href="#title" class="nav-item">Home</a>
+            <a href="#content" class="nav-item">Our Package</a>
             <a href="/" class="nav-item">Call Us</a>
         </div>
     </header>
@@ -68,19 +67,23 @@
             </div>
 
             <div id="content-right" class="content-right">
-                <form class="content-form">
+                <form name="contactus-form" class="content-form">
                     <label for="your-name">Your Name :</label>
-                    <input type="text" name="your-name" placeholder="First and Last Name">
+                    <input id="your-name" type="text" name="name" placeholder="First and Last Name">
+                    <p id="name-error" class="error-message"></p>
 
                     <label for="email">Email Address :</label>
-                    <input type="email" name="email" placeholder="example@email.com">
+                    <input id="email" type="email" name="email" placeholder="example@email.com">
+                    <p id="email-error" class="error-message"></p>
 
                     <label for="interest">What are you interested in?</label>
                     <select type="select" name="interest">
-                        <option>Fruits</option>
-                        <option>Vegetables</option>
-                        <option>Junk Food</option>
+                        <option value="">-- Choose One --</option>
+                        <option value="Fruit">Fruits</option>
+                        <option value="vegetable">Vegetables</option>
+                        <option value="junkfood">Junk Food</option>
                     </select>
+                    <p id="interest-error" class="error-message"></p>
 
                     <button id="button" type="submit" class="button">Send</button>
                 </form>
@@ -92,5 +95,6 @@
 
     <footer></footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
