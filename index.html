@@ -30,7 +30,9 @@
         <div id="content" class="content">
             <div id="content-left" class="content-left">
                 <div id="content-image" class="content-image">
-                    <img src="assets/fruit-supermarket.jpg" alt="slider image">
+                    <img src="assets/fruit-supermarket.jpg" alt="slider image" class="image active">
+                    <img src="assets/vegetables-supermarket.jpg" alt="slider image" class="image">
+                    <img src="assets/junkfood-supermarket.jpg" alt="slider image" class="image">
                     <span>"Setiap hari beli sayur buah yang fresh disini!"</span>
                 </div>
 
@@ -67,7 +69,9 @@
             </div>
 
             <div id="content-right" class="content-right">
-                <form name="contactus-form" class="content-form">
+                <form name="contact-form" class="content-form">
+                    <h3 class="contact-us">Contact Us</h3>
+                    <span class="explanation-contact">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</span>
                     <label for="your-name">Your Name :</label>
                     <input id="your-name" type="text" name="name" placeholder="First and Last Name">
                     <p id="name-error" class="error-message"></p>
@@ -79,13 +83,13 @@
                     <label for="interest">What are you interested in?</label>
                     <select type="select" name="interest">
                         <option value="">-- Choose One --</option>
-                        <option value="Fruit">Fruits</option>
+                        <option value="fruit">Fruits</option>
                         <option value="vegetable">Vegetables</option>
                         <option value="junkfood">Junk Food</option>
                     </select>
                     <p id="interest-error" class="error-message"></p>
 
-                    <button id="button" type="submit" class="button">Send</button>
+                    <div id="button" type="submit" class="button">Send</div>
                 </form>
             </div>
         </div>
